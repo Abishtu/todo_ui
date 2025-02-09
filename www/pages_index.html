@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<div class="flex flex-col justify-center gap-2">
+    <div class="flex-1 justify-left text-3xl font-bold m-3">
+        Task List
+    </div>
+    <div id="task_list">
+        {% include 'task_list.html' %}
+    </div>
+    <div>
+        <button hx-target="#task_list" hx-get="/tasks">Refresh List</button>
+    </div>
+</div>
+{% endblock %}

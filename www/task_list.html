@@ -1,0 +1,22 @@
+<div class="flex flex-col justify-center items-center gap-2">
+    {% for task in tasks %}
+        <div class="flex flex-col border w-100 md:w-150 ld:w-200 rounded-sm">
+            <div class="flex-1 m-1">
+                {{task.name}}
+            </div>
+            <div class="flex-1 m-1">
+                {{task.description}}
+            </div>
+            <div class="flex flex-row-reverse gap-3 mr-4 pb-2">
+                {% for task_status in task.status %}
+                <div class="border rounded-md">
+                    <p class="m-0.5 text-xs">
+                        {{task_status.name}}
+                    </p>
+                </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    {% endfor %}
+</div>

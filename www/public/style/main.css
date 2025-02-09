@@ -1,0 +1,43 @@
+.page {
+    margin:0 auto;
+    width: 50%;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: inherit;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.card-contents {
+    margin: 5px;
+}
+
+.card-contents-title {
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 2px;
+    border-bottom: 3px black;
+}
+
+.card-contents-description {
+    font-weight: lighter;
+}
+
+.card-contents-status {
+    float: right;
+}
+
+.chip {
+    background-color: lightsteelblue;
+    border-radius: 5px;
+    margin: 5px;
+    color: white;
+    width: fit-content;
+}
+
+h1 {
+    color: forestgreen;
+}
